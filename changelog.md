@@ -1,6 +1,9 @@
 # Changelog
 
-## Current
+## 1.0.1
++ Fixed description meta tag.
+
+## 1.0.0
 + Added support for Internet Explorer 8+ as default with respond.js
 + Added OpenGraph metadata for social media sites.
 + Added Google Analytics snippet to index file.
