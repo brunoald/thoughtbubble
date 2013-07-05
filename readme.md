@@ -7,7 +7,7 @@ Reflex is developed in response to the idea that preset grid systems do not matc
 A Reflex based grid uses percentages as the primary horizontal measurement. The gutters and vertical measurements are sized with em or rem units, by default these use a typographic baseline measurement.
 
 ## Browser Support
-Reflex is designed to work fully with the latest release versions of Chrome, Firefox, Safari, Opera and Internet Explorer 9+, as well as modern smartphone browsers (primarily Android and iOS) with the basic (non-media query) styles serving as a base for supporting older browsers.
+Reflex is designed to work fully with the latest release versions of Chrome, Firefox, Safari, Opera and Internet Explorer 8+, as well as modern smartphone browsers (primarily Android and iOS) with the basic (non-media query) styles serving as a base for supporting older browsers.
 
 If older versions of Internet Explorer must be fully supported then this can be achieved through the use of polyfills and additional stylesheets. Reflex leaves this open for the developer to choose what is best for each project.
 
