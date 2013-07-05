@@ -1,6 +1,6 @@
-# [Reflex](reflex.doublethink.is)
+# [Reflex](http://reflex.doublethink.is)
 
-Reflex is a front-end development framework written in HTML5, JavaScript and Sass. It is designed to serve as a starting point for modern web projects, as such it does not dictate the style of the site and only intends to combine sensible defaults with optional Sass mixins.
+Reflex is a front-end development framework written in HTML5, JavaScript and Sass. It is designed to serve as a starting point for modern web projects. Reflex does not attempt to dictate the style of the site with presets, only to combine sensible defaults with optional Sass mixins.
 
 ## Grid System
 Reflex is developed in response to the idea that preset grid systems do not match well with the challenges of responsive web design. Instead of fitting content into a preset grid system, it provides a number of Sass mixins to be used as tools to quickly create a unique responsive grid system around the content.
