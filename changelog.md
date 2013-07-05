@@ -1,5 +1,10 @@
 # Changelog
 
+## Current
++ Added OpenGraph metadata for social media sites.
++ Added Google Analytics snippet to index file.
++ Added JQuery version 2.0.3, version 1.10.2 will be served to Internet Explorer 8 and below. 
+
 ## 1.0.1
 + Moved variables from reset to base.
 + Renamed reset to normalize to reflect the shared codebase with the normalize.sass repository.
