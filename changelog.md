@@ -1,7 +1,7 @@
 # Changelog
 
 ## Current
-+ Added support for Internet Explorer as default with respond.js
++ Added support for Internet Explorer 8+ as default with respond.js
 + Added OpenGraph metadata for social media sites.
 + Added Google Analytics snippet to index file.
 + Added JQuery version 2.0.3, version 1.10.2 will be served to Internet Explorer 8 and below.
