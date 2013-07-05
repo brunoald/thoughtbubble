@@ -5,7 +5,7 @@
 + Added OpenGraph metadata for social media sites.
 + Added Google Analytics snippet to index file.
 + Added JQuery version 2.0.3, version 1.10.2 will be served to Internet Explorer 8 and below.
-+ JavaScript files now stored in js/libs
++ JavaScript files now stored in js/libs.
 + Updated iPhone retina display icon to 120x120 in accordance with iOS7 guidelines.
 
 ## 1.0.1
