@@ -4,17 +4,22 @@
 
 // Grid Container
 .container
+  +container
   +grid-padding
+  min-width: 10em
+  max-width: 40em
 
 // Grids
-.grid
+.grid,
+.grid-reverse,
+.grid-center
   +grid
 
 .grid-reverse
-  +grid($reverse-direction)
+  text-align: $reverse-direction
 
 .grid-center
-  +grid(center)
+  text-align: center
 
 .grid > .grid
   overflow: hidden

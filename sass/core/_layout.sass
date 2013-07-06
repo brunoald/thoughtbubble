@@ -23,10 +23,20 @@
   display: block
   margin: 0 auto
 
+// Special container unit for centering with max and min width
+@mixin container
+  width: auto
+  +center
+  vertical-align: top
+  text-align: $text-direction
+  letter-spacing: normal
+  word-spacing: normal
+  text-rendering: auto
+
 // Container for inline-block modules
-@mixin grid($grid-direction: $text-direction)
+@mixin grid
   display: block
-  text-align: $grid-direction
+  text-align: $text-direction
   letter-spacing: -0.31em
   text-rendering: optimizespeed
 

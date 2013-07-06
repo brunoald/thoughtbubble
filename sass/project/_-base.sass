@@ -3,15 +3,11 @@ html
   font: $normal 100% $base-typeface
 
 body
-  +center
-  +grid-padding
   background: $white
   font-size: em($body-size)
   line-height: em($baseline)
-  max-width: 40em
   padding-top: em($baseline)
   color: $grey-dark
-  background: $white
 
 // Typography
 h1,h2,h3,h4,h5,h6
@@ -45,6 +41,10 @@ h6
 small
   font-size: em($small-size)
 
+p, ul, ol, dl
+  margin-top: 0
+  margin-bottom: em($baseline)
+
 // Links
 a
   color: $blue
@@ -57,7 +57,7 @@ a
     color: lighten($blue, 20%)
 
 // Navigation
-nav
+#menu
   ul
     list-style: none
     padding-left: 0
@@ -72,3 +72,6 @@ nav
 
     &:hover
       background: $blue
+
+body
+  +rem(margin, $baseline/2 $baseline)
