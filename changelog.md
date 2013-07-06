@@ -1,15 +1,18 @@
 # Changelog
 
+## 1.2.1
++ Removed excess testing code from 1.2.0 base file.
+
 ## 1.2.0
-+ Moved max-width from `body` to `.container`, now generated with container mixin
++ Moved max-width from `body` to `.container`, now generated with container mixin.
 + Corrected favicon reference.
 + Paragraphs and lists now have default styling.
 + Grids now share a single Sass mixin, direction set by CSS in modules.
-+ Imports Compass complete now
-+ New config file for Compass compatibility
-+ Added `#menu` id to `nav` element
-+ Root Em fallback mixin now accepts multiple values (e.g. `+rem(margin, 20px 0`)
-+ Added basic rem value generator
++ Imports Compass complete now.
++ New config file for Compass compatibility.
++ Added `#menu` id to `nav` element.
++ Root Em fallback mixin now accepts multiple values (e.g. `+rem(margin, 20px 0`).
++ Added basic rem value generator.
 
 ## 1.1.1
 + Fixed description meta tag.
