@@ -1,0 +1,64 @@
+html
+  border-top: none
+  min-height: 100%
+
+.container
+  clear: none
+
+#page-header
+  +unit
+  +width-golden-small
+  border-bottom: none
+  border-right: 1px solid $grey-light
+  border-left: rem($baseline*0.5) solid $red
+  position: fixed
+  height: 100%
+
+#main,
+  +unit
+  padding: 0
+  +width-golden-large
+  margin-left: 37.97%
+
+#main
+  .container
+    padding: em($baseline) em($baseline*2)
+    margin: 0 auto
+    max-width: 60em
+
+#menu
+  margin-top: 0
+  ul,
+  li,
+  a
+    display: block
+
+  li
+    margin: 0
+
+#brand,
+#menu
+  clear: left
+  float: none
+  padding: 0
+  margin-left: rem($baseline*2)
+
+.legal
+  color: $grey-medium
+
+#page-footer
+  position: fixed
+  background: none
+  border: none
+  width: 37.97%
+  padding: 0
+  bottom: 0
+
+.feature-image
+  margin-top: 0
+
+#main,
+#page-footer
+  .container
+    margin: 0 auto
+    max-width: 50em

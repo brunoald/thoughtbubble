@@ -1,0 +1,34 @@
+// Set Border Box as default
+html *
+  +box-sizing(border-box)
+
+// Grid Container
+.container
+  +container
+  min-width: 18em
+  max-width: 40em
+  clear: left
+
+// Grids
+.grid,
+.grid-reverse,
+.grid-center
+  +grid
+
+.grid-reverse
+  text-align: $reverse-direction
+
+.grid-center
+  text-align: center
+
+.grid > .grid
+  overflow: hidden
+  margin-right: 0
+  margin-left: 0
+
+// Grid Units
+.unit
+  +unit
+
+.center
+  +center

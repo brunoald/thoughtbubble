@@ -1,63 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
+    <!-- Metadata -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Reflex from Doublethink</title>
+    <title>Doublethink</title>
+    <meta content="Doublethink is a digital product design studio based in Glasgow, Scotland." name="description">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Doublethink" />
+    <meta property="og:description" content="Doublethink is a digital product design studio based in Scotland." />
+    <meta property="og:image" content="img/system/apple-touch-icon-144x144.png">
+
+    <!-- Icons -->
+    <link href="img/system/favicon.ico" rel="shortcut icon">
+    <link href="img/system/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="img/system/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="img/system/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="img/system/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <meta content="img/system/ms-icon.png" name="msapplication-TileImage">
+    <meta content="#c00" name="msapplication-TileColor">
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+      // typekit
+      (function() {
+        var config = {
+          kitId: 'wee4lgw',
+          scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+      })();
+    </script>
+    <script src="js/libs/modernizr-2.6.2.dev.js"></script>
+    <!--[if IE 8]><script src="js/libs/"respond.min.js"></script><![endif]-->
+
+    <!-- Stylesheets -->
+    <link href="css/main.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Reflex</h1>
-        <p>A Sass and HTML5 framework for responsive websites</p>
 
-        <p class="view"><a href="https://github.com/craigmorrison/reflex">View the project on GitHub</a></p>
+  <body class="grid">
 
+    <header id="page-header" role="banner" class="container">
+      <h1 id="brand">Doublethink</h1>
+    </header>
 
-        <ul>
-          <li><a href="https://github.com/craigmorrison/reflex/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/craigmorrison/reflex/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/craigmorrison/reflex">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a name="reflex" class="anchor" href="#reflex"><span class="octicon octicon-link"></span></a>Reflex</h1>
+    <main id="main" role="main">
+      <div class="container">
+        <section id="reflex-description">
+          <h2>Reflex</h2>
+          <p>Reflex is a front-end development framework written in HTML5, JavaScript and Sass. It is designed to serve as a starting point for modern web projects and has been developed from the codebase we have been developing responsive websites at Doublethink with for around two years now. Due to it's design studio roots Reflex does not attempt to restrict the style of the site with it's default settings, its goal is to combine sensible defaults with robust grid building tools</p>
 
-<p>Reflex is a front-end development framework written in HTML5, JavaScript and Sass. It is designed to serve as a starting point for modern web projects, as such it does not dictate the style of the site and only intends to combine sensible defaults with optional Sass mixins.</p>
+          <a class="button" href="https://github.com/craigmorrison/reflex/zipball/master">Download Reflex</a>
 
-<h2>
-<a name="grid-system" class="anchor" href="#grid-system"><span class="octicon octicon-link"></span></a>Grid System</h2>
+          <h3>Documentation</h3>
+          <p>Please view the project's GitHub Wiki for documentation.</p>
 
-<p>Reflex is developed in response to the idea that preset grid systems do not match well with the challenges of responsive web design. Instead of fitting content into a preset grid system, it provides a number of Sass mixins to be used as tools to quickly create a unique responsive grid system around the content.</p>
+          <h3>Browser Support</h3>
+          <p>Reflex is designed to work fully with the latest release versions of Chrome, Firefox, Safari, Opera and Internet Explorer 8+, as well as modern smartphone browsers (e.g. Android and iOS) with the basic (non-media query) styles serving as a base for supporting older browsers.</p>
 
-<p>A Reflex based grid uses percentages as the primary horizontal measurement. The gutters and vertical measurements are sized with em or rem units, by default these use a typographic baseline measurement.</p>
+          <h3>License</h3>
+          <p>Reflex is released under the MIT license.</p>
+          
+        </section>
+    </main>
 
-<h2>
-<a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser Support</h2>
+    <footer id="page-footer" role="contentinfo">
+      <div class="container">
+        <section class="legal">
+          <p><small>&copy; 2011-2013 Doublethink Studios LLP.</small></p>
+        </section>
+      </div>
+    </footer>
 
-<p>Reflex is designed to work fully with the latest release versions of Chrome, Firefox, Safari, Opera and Internet Explorer 8+, as well as modern smartphone browsers (primarily Android and iOS) with the basic (non-media query) styles serving as a base for supporting older browsers.</p>
+    <!-- JQuery -->
+    <!--[if lt IE 9]>
+    <script src="js/libs/jquery-1.10.2.min.js"></script><![endif]-->
+    <!--[if gt IE 8]><script src="js/libs/jquery-2.0.3.min.js"></script><![endif]-->
 
-<p>If older versions of Internet Explorer must be fully supported then this can be achieved through the use of polyfills and additional stylesheets. Reflex leaves this open for the developer to choose what is best for each project.</p>
+    <!-- Responsive Nav -->
+    <script>
+      var navigation = responsiveNav("#menu", {
+        insert: "before",
+      });
+    </script>
 
-<h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
-
-<p>Reflex is released under the MIT license.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/craigmorrison">Craig Morrison</a></p>
-        <p><small>Hosted on GitHub Pages.<br> Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!-- Google Analytics -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
   </body>
 </html>

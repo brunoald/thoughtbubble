@@ -1,0 +1,170 @@
+// Basic
+html
+  border-top: solid 6px $red
+  font: $normal 100% $base-typeface
+  background: $grey-lighter
+
+body
+  background: $white
+  font-size: em($body-size)
+  line-height: em($baseline)
+  color: $grey-6
+
+#main,
+#page-footer
+  .container
+    +grid-padding
+
+// Typography
+h1,h2,h3,h4,h5,h6
+  margin-top: 0
+  line-height: 1em
+  color: $grey-dark
+
+h1,h2,h3,h4
+  font-family: $head-typeface
+  text-transform: uppercase
+  font-weight: $semibold
+
+h1
+  font-size: em($h1-size)
+  margin-bottom: em($baseline*0.5, $h1-size)
+
+h2
+  font-size: em($h2-size)
+  margin-bottom: em($baseline*0.5, $h2-size)
+
+h3
+  font-size: em($h3-size)
+  margin-bottom: em($baseline*0.5, $h3-size)
+
+h4
+  font-size: em($h4-size)
+  margin-bottom: em($baseline*0.5, $h4-size)
+
+h5
+  font-size: em($h5-size)
+  margin-bottom: em($baseline*0.5, $h5-size)
+
+h6
+  font-size: em($h6-size)
+  margin-bottom: em($baseline*0.5, $h6-size)
+
+small
+  font-size: em($small-size)
+
+p, ul, ol, dl
+  margin-top: 0
+  margin-bottom: em($baseline)
+
+// Links
+a
+  color: $blue
+  text-decoration: none
+
+  &:hover, &:focus
+    text-decoration: underline
+
+  &:active
+    color: lighten($blue, 20%)
+
+// Header
+#page-header
+  +grid
+  border-bottom: 1px solid $grey-lighter
+
+#brand
+  +unit
+  padding: 0
+  text-indent: -9999px
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0Kd2lkdGg9IjIwNHB4IiBoZWlnaHQ9IjI2cHgiIHZpZXdCb3g9IjAgMCAyMDQgMjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwNCAyNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gaWQ9Ik91dGVyX0VkZ2UiIHN0eWxlPSJmaWxsOiMwQjBFMUU7IiBwb2ludHM9IjI2LDEwLjkgMjMuNCwxMC45IDE5LjIsMTAuOSAxOS4yLDE5LjMgNi43LDE5LjMgNi43LDYuOCAxNS4xLDYuOCANCjE1LjEsNi44IDE1LjEsMi42IDE1LjEsMC4xIDAsMC4xIDAsMjYgMjYsMjYgMjYsMTAuOSAJIi8+DQo8cmVjdCBpZD0iU21hbGxfU3F1YXJlIiB4PSIxMC45IiB5PSIxMC45IiBzdHlsZT0iZmlsbDojRDIxMzE3OyIgd2lkdGg9IjQuMiIgaGVpZ2h0PSI0LjIiLz4NCjxyZWN0IGlkPSJMYXJnZV9TcXVhcmUiIHg9IjE5LjIiIHk9IjAuMSIgc3R5bGU9ImZpbGw6I0QyMTMxNzsiIHdpZHRoPSI2LjciIGhlaWdodD0iNi43Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEIwRTFFOyIgZD0iTTQ0LjQsMjMuOGMtMS4xLDEuMi0yLjYsMi4yLTUsMi4yaC02LjZWMGg2LjZjMi41LDAsNCwwLjksNSwyLjFDNDYuMyw0LjMsNDYuMyw4LDQ2LjMsMTMNCkM0Ni4zLDE4LDQ2LjMsMjEuNyw0NC40LDIzLjh6IE00MS4zLDQuOGMtMC40LTAuNi0xLjEtMS4xLTIuMS0xLjFoLTIuNHYxOC42aDIuNGMxLDAsMS43LTAuNCwyLjEtMS4xYzAuOC0xLjIsMC45LTMuOCwwLjktOC4zDQpDNDIuMiw4LjUsNDIuMSw2LDQxLjMsNC44eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzBCMEUxRTsiIGQ9Ik02MS4xLDIzLjhDNjAsMjUsNTguNiwyNiw1Ni4yLDI2Yy0yLjQsMC0zLjktMC45LTQuOS0yLjFjLTEuOS0yLjEtMS45LTUuOS0xLjktMTAuOA0KYzAtNSwwLTguNywxLjktMTAuOEM1Mi4zLDAuOSw1My43LDAsNTYuMiwwYzIuNCwwLDMuOSwwLjksNC45LDIuMUM2Myw0LjMsNjMsOCw2MywxM0M2MywxOCw2MywyMS43LDYxLjEsMjMuOHogTTU4LjEsNC42DQpjLTAuNC0wLjYtMS0xLTEuOS0xYy0xLDAtMS41LDAuNC0xLjksMWMtMC44LDEuMi0wLjksMy44LTAuOSw4LjRjMCw0LjYsMC4xLDcuMiwwLjksOC40YzAuNCwwLjYsMC45LDEsMS45LDFjMSwwLDEuNi0wLjQsMS45LTENCmMwLjctMS4yLDAuOS0zLjgsMC45LTguNEM1OC45LDguMyw1OC44LDUuOCw1OC4xLDQuNnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwQjBFMUU7IiBkPSJNNzcuOSwyNC4xYy0xLjIsMS4zLTIuOCwxLjktNC44LDEuOWMtMS45LDAtMy42LTAuNi00LjgtMS45Yy0xLjEtMS4yLTEuOC0yLjgtMS44LTQuN1YwaDR2MTkuNQ0KYzAsMS44LDEuMiwyLjcsMi41LDIuN2MxLjQsMCwyLjUtMC45LDIuNS0yLjdWMGg0djE5LjNDNzkuNywyMS4zLDc5LDIyLjksNzcuOSwyNC4xeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzBCMEUxRTsiIGQ9Ik05NS41LDI0LjNjLTEuMSwxLjEtMi43LDEuNi01LjEsMS42SDg0VjBoNi41YzIuNCwwLDQsMC41LDUuMSwxLjZjMS4yLDEuMiwxLjYsMi45LDEuNiw1LjUNCmMwLDEuNy0wLjIsMy4yLTEuMyw0LjRjLTAuNCwwLjQtMC44LDAuNy0xLjMsMC45YzAuNSwwLjIsMSwwLjUsMS40LDAuOWMxLjMsMS40LDEuNCwzLjQsMS40LDVDOTcuMiwyMS4yLDk2LjgsMjMuMSw5NS41LDI0LjN6DQpNOTAsMy43aC0xLjl2N0g5MGMyLjIsMCwzLjEtMS4xLDMuMS0zLjVDOTMuMSw0LjYsOTIuMiwzLjcsOTAsMy43eiBNOTAsMTQuMmgtMnY4LjFoMmMyLjIsMCwzLjEtMSwzLjEtNA0KQzkzLjEsMTUuNCw5Mi4yLDE0LjIsOTAsMTQuMnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwQjBFMUU7IiBkPSJNMTAxLjIsMjZWMGg0LjF2MjIuM2g2LjhWMjZIMTAxLjJ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEIwRTFFOyIgZD0iTTExNS4yLDI2VjBoMTAuOXYzLjdoLTYuOHY3LjRoNS45djMuN2gtNS45djcuNWg2LjhWMjZIMTE1LjJ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEIwRTFFOyIgZD0iTTEzNy43LDMuN1YyNmgtNC4xVjMuN2gtNC4zVjBoMTIuOHYzLjdIMTM3Ljd6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEIwRTFFOyIgZD0iTTE1NC4yLDI2VjE0LjZoLTUuMVYyNkgxNDVWMGg0LjFWMTFoNS4xVjBoNC4xVjI2SDE1NC4yeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzBCMEUxRTsiIGQ9Ik0xNjIuNywyNlYwaDQuMVYyNkgxNjIuN3oiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwQjBFMUU7IiBkPSJNMTgxLjMsMjZsLTYuMS0xNS40VjI2aC00LjFWMGgzLjZsNi4xLDE1LjRWMGg0LjFWMjZIMTgxLjN6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEIwRTFFOyIgZD0iTTE5OS42LDI2bC00LjItMTAuN2wtMiw0VjI2aC00LjFWMGg0LjF2MTIuMkwxOTkuMSwwaDQuMUwxOTgsMTAuOGw2LDE1LjJIMTk5LjZ6Ii8+DQo8L3N2Zz4NCg==)
+  height: 26px
+  width: 204px
+  +rem(margin, $baseline $baseline*0.5)
+
+// Responsive Nav
+#menu
+
+  ul
+    margin: 0
+    padding: 0
+    width: 100%
+    list-style: none
+    display: block
+
+  li
+    width: 100%
+
+  .opened
+    max-height: 9999px
+
+  a
+    +unit
+    background: $grey-dark
+    color: $white
+    display: block
+    padding: em($baseline*0.5)
+
+    &:hover
+      background: $black
+      text-decoration: none
+
+#nav-toggle
+  +unit
+  float: right
+  text-align: right
+  width: em($baseline)
+  +hide-text(right)
+  +rem(width, 26)
+  +rem(height, 26)
+  +rem(margin, $baseline $baseline/2)
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0Kd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNiAyNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3Qgc3R5bGU9ImZpbGw6IzIxMjEyMTsiIHdpZHRoPSIyNiIgaGVpZ2h0PSI2Ii8+DQo8cmVjdCB5PSIxMCIgc3R5bGU9ImZpbGw6IzIxMjEyMTsiIHdpZHRoPSIyNiIgaGVpZ2h0PSI2Ii8+DQo8cmVjdCB5PSIyMCIgc3R5bGU9ImZpbGw6IzIxMjEyMTsiIHdpZHRoPSIyNiIgaGVpZ2h0PSI2Ii8+DQo8L3N2Zz4NCg==)
+
+.js
+  #menu
+    clip: rect(0 0 0 0)
+    max-height: 0
+    position: absolute
+    display: block
+    overflow: hidden
+    zoom: 1
+
+// Typekit
+.wf-loading body
+  opacity: 0
+ 
+.wf-active body
+  opacity: 1
+  +transition(opacity 0.3s ease-in)
+
+// Footer
+#page-footer
+  background: $grey-lighter
+  border-top: 1px solid $grey-light
+  padding-top: em($baseline)
+
+main
+  padding-top: em($baseline)
+
+// Media
+img
+  display: block
+  width: 100%
+  border: 1px solid $grey-lighter
+  margin-bottom: em($baseline)
+
+.feature-image
+  border: none
+  margin-top: em($baseline*-1)
+
+.button
+  background: $red
+  color: $white
+  padding: em($baseline)
+  +border-radius(5px)
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    background: darken($red)
+    text-decoration: none

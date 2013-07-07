@@ -1,0 +1,58 @@
+// Responsive Nav
+
+.js
+  #menu
+    max-height: none
+    overflow: auto
+
+  #nav.closed
+    max-height: none
+
+#nav-toggle
+  display: none
+
+#brand
+  float: left
+  margin-left: rem($baseline*2)
+
+#menu
+  +unit
+  padding-right: 0
+  text-align: right
+  width: auto
+  float: right
+  margin: rem(31) rem($baseline*2) rem(21) rem($baseline*0.5)
+
+  ul,
+  li,
+  a
+    display: inline-block
+    width: auto
+
+  li
+    margin-left: em($baseline)
+
+  a
+    padding: 0
+    background: none
+    color: $grey-6
+    line-height: em($baseline)
+
+    &:hover
+      background: none
+      color: #000
+
+  a,
+  a:hover,
+  a:focus
+    +transition(all 0.4s ease-in-out)
+
+#main,
+  .container
+    padding: em($baseline) em($baseline*2)
+    max-width: 60em
+
+#page-footer
+  .container
+    padding: 0 em($baseline*2)
+    max-width: 60em
