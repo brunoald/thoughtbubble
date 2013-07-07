@@ -422,6 +422,7 @@ img {
   letter-spacing: normal;
   word-spacing: normal;
   text-rendering: auto;
+  width: auto;
   background: #d20a11;
   color: white;
   padding: 0.8125em 1.625em;
@@ -432,8 +433,13 @@ img {
   text-decoration: none;
   margin-bottom: 1.625em; }
   .button:hover, .button:focus {
-    background: #ba090f;
+    background: #c30910;
     text-decoration: none; }
+  .button:active {
+    color: white;
+    -webkit-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset; }
 
 @media only screen and (min-width: 20em) {
   .container {
