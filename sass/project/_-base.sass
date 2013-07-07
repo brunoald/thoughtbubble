@@ -2,10 +2,9 @@
 html
   border-top: solid 6px $red
   font: $normal 100% $base-typeface
-  background: $grey-lighter
+  background: $white
 
 body
-  background: $white
   font-size: em($body-size)
   line-height: em($baseline)
   color: $grey-6
@@ -20,11 +19,6 @@ h1,h2,h3,h4,h5,h6
   margin-top: 0
   line-height: 1em
   color: $grey-dark
-
-h1,h2,h3,h4
-  font-family: $head-typeface
-  text-transform: uppercase
-  font-weight: $semibold
 
 h1
   font-size: em($h1-size)
@@ -163,8 +157,9 @@ img
   padding: em($baseline)
   +border-radius(5px)
   text-decoration: none
+  margin-bottom: em($baseline)
 
   &:hover,
   &:focus
-    background: darken($red)
+    background: darken($red, 5%)
     text-decoration: none

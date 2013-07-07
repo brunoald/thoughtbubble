@@ -234,10 +234,9 @@ html * {
 html {
   border-top: solid 6px #d20a11;
   font: 400 100% "Source Sans Pro", "Helvetica", sans-serif;
-  background: #eeeeee; }
+  background: white; }
 
 body {
-  background: white;
   font-size: 1em;
   line-height: 1.625em;
   color: #666666; }
@@ -253,11 +252,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   line-height: 1em;
   color: #222222; }
-
-h1, h2, h3, h4 {
-  font-family: "ff-din-web-condensed", "arial narrow", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600; }
 
 h1 {
   font-size: 3.4375em;
@@ -416,6 +410,20 @@ img {
   border: none;
   margin-top: -1.625em; }
 
+.button {
+  background: #d20a11;
+  color: white;
+  padding: 1.625em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 1.625em; }
+  .button:hover, .button:focus {
+    background: #ba090f;
+    text-decoration: none; }
+
 @media only screen and (min-width: 20em) {
   .container {
     max-width: none; }
@@ -478,12 +486,14 @@ img {
       transition: all 0.4s ease-in-out; }
 
   #main .container {
-    padding: 1.625em 3.25em;
-    max-width: 60em; }
+    padding: 1.625em 3.25em; }
 
   #page-footer .container {
-    padding: 0 3.25em;
-    max-width: 60em; } }
+    padding: 0 3.25em; }
+
+  section,
+  article {
+    max-width: 50em; } }
 @media only screen and (min-width: 70em) {
   html {
     border-top: none;
