@@ -437,13 +437,14 @@ img {
   margin-bottom: 1.625em; }
   .button:hover, .button:focus {
     background: #c30910;
-    text-decoration: none; }
+    text-decoration: none;
+    outline: 0; }
   .button:active {
     color: white;
     -webkit-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
-    outline: none; }
+    outline: 0; }
 
 @media only screen and (min-width: 20em) {
   .container {
