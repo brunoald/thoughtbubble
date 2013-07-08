@@ -285,12 +285,20 @@ p, ul, ol, dl {
   margin-bottom: 1.625em; }
 
 a {
-  color: #0044cc;
+  color: #d20a11;
   text-decoration: none; }
-  a:hover, a:focus {
+  a:hover {
     text-decoration: underline; }
+  a:focus {
+    outline: 0;
+    background: #d20a11;
+    padding: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
   a:active {
-    color: #3377ff; }
+    color: #f64c52; }
 
 #page-header {
   display: block;
@@ -348,7 +356,7 @@ a {
   color: white;
   display: block;
   padding: 0.8125em; }
-  #menu a:hover {
+  #menu a:hover, #menu a a:focus {
     background: black;
     text-decoration: none; }
 
@@ -434,18 +442,15 @@ img {
   -ms-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
-  margin-bottom: 1.625em;
-  outline: 0; }
+  margin-bottom: 1.625em; }
   .button:hover, .button:focus {
     background: #c30910;
-    text-decoration: none;
-    outline: 0; }
+    text-decoration: none; }
   .button:active {
     color: white;
     -webkit-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset;
-    outline: 0; }
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset; }
 
 @media only screen and (min-width: 20em) {
   .container {
