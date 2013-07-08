@@ -434,7 +434,8 @@ img {
   -ms-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
-  margin-bottom: 1.625em; }
+  margin-bottom: 1.625em;
+  outline: 0; }
   .button:hover, .button:focus {
     background: #c30910;
     text-decoration: none;
