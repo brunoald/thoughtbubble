@@ -291,12 +291,7 @@ a {
     text-decoration: underline; }
   a:focus {
     outline: 0;
-    background: #d20a11;
-    padding: 3px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px; }
+    text-decoration: underline; }
   a:active {
     color: #f64c52; }
 
