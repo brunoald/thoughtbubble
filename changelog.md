@@ -1,5 +1,8 @@
 # Changelog
 
+## HEAD
++ Added support for hi-dpi/retina displays
+
 ## 1.2.1
 + Removed excess testing code from 1.2.0 base file.
 
