@@ -7,12 +7,15 @@ $light: 300
 $normal: 400
 $bold: 700
 
-// Type Sizes (equal to sizes in px)
-$small-size: 13
+
+// Modular Scale
 $body-size: 16
-$h6-size: $body-size
-$h5-size: 21
-$h4-size: 26
-$h3-size: 34
-$h2-size: 41
-$h1-size: 55
+$small-size: 13
+$scale-ratio: 1.5
+
+$h6-size: modular-scale($body-size,  1, $scale-ratio)
+$h5-size: modular-scale($small-size,  2, $scale-ratio)
+$h4-size: modular-scale($body-size,  2, $scale-ratio)
+$h3-size: modular-scale($small-size,  3, $scale-ratio)
+$h2-size: modular-scale($body-size,  3, $scale-ratio)
+$h1-size: modular-scale($small-size,  4, $scale-ratio)
