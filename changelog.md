@@ -1,6 +1,9 @@
 # Changelog
 
-## HEAD
+## 2.0.0
++ Replaced Compass with Bourbon
+
+## 1.3.0
 + Added support for hi-dpi/retina displays
 
 ## 1.2.1
