@@ -40,6 +40,11 @@
   letter-spacing: -0.31em
   text-rendering: optimizespeed
 
+// Container for float modules with padding
+@mixin float-grid
+  +rem(margin-left, $gutter * $gutter-modifier * -1)
+  +rem(margin-right, $gutter * $gutter-modifier * -1)
+
 // Grid Sizes
 @mixin width-golden-large
   width: golden-ratio(100%, -1)
