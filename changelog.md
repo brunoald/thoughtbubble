@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
++ Added `float-grid` for floated units with padding
++ Fix `border-box`
+
 ## 2.0.1
 + Corrected percentage width calculations.
 
