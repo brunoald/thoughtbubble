@@ -1,8 +1,11 @@
 # Changelog
 
-## HEAD
+## 2.1
++ Reverted to float based grid due to rounding issues with inline-block in some browers.
 + Added `float-grid` for floated units with padding
 + Fix `border-box`
++ Fix gutter-modifier variable in `_grid.sass`
++ Changed Apple Icon to a single 152x152 icon.
 
 ## 2.0.1
 + Corrected percentage width calculations.

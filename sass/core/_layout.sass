@@ -41,7 +41,7 @@
   text-rendering: optimizespeed
 
 // Container for float modules with padding
-@mixin float-grid
+@mixin float-grid($gutter-modifier: 0.5)
   +rem(margin-left, $gutter * $gutter-modifier * -1)
   +rem(margin-right, $gutter * $gutter-modifier * -1)
 

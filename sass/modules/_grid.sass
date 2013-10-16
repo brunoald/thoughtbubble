@@ -10,16 +10,8 @@
   max-width: 40em
 
 // Grids
-.grid,
-.grid-reverse,
-.grid-center
-  +grid
-
-.grid-reverse
-  text-align: $reverse-direction
-
-.grid-center
-  text-align: center
+.grid
+  +float-grid
 
 .grid > .grid
   overflow: hidden
@@ -28,7 +20,7 @@
 
 // Grid Units
 .unit
-  +unit
+  +float-unit
 
-.center
-  +center
+.unit-right
+  +float-unit(right)
