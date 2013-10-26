@@ -1,8 +1,11 @@
 # Changelog
 
+## HEAD
++ Remove `maximum-scale=1` now that the iOS bug has been fixed.
+
 ## 2.1.1
-+ Updated Icons and Improved Open Graph compatibility
-+ Updates to default CSS and default colour variables
++ Update Icons and Improved Open Graph compatibility
++ Update to default CSS and default colour variables
 
 ## 2.1
 + Reverted to float based grid due to rounding issues with inline-block in some browers.
