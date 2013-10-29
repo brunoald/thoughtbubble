@@ -1,7 +1,8 @@
 # Changelog
 
-## HEAD
+## 2.2
 + Remove `maximum-scale=1` now that the iOS bug has been fixed.
++ Update normalize.sass to 2.1.3
 
 ## 2.1.1
 + Update Icons and Improved Open Graph compatibility
