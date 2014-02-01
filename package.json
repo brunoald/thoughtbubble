@@ -19,6 +19,7 @@
     "gulp-util": "~2.2.13",
     "gulp-sass": "~0.6.0",
     "node-bourbon": "~1.0.0",
-    "gulp-csso": "~0.2.3"
+    "gulp-csso": "~0.2.3",
+    "gulp-jade": "~0.4.0"
   }
 }

@@ -4,9 +4,10 @@ var gutil = require('gulp-util');
 var bourbon = require('node-bourbon').includePaths;
 var sass = require('gulp-sass');
 var csso = require('gulp-csso');
+var jade = require('gulp-jade');
 
 // Basic Tasks
-gulp.task('css', function() {
+gulp.task('styles', function() {
   return gulp.src('sass/*.scss')
     .pipe( 
       sass( {
@@ -17,10 +18,23 @@ gulp.task('css', function() {
     .pipe( gulp.dest('www/css/') )
 });
 
+gulp.task('templates', function() {
+
+});
+
+// Jade
+gulp.task('templates', function() {
+  return gulp.src('jade/*.jade')
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('www/'))
+});
+
 // Watch
 gulp.task('watch', function () {
-  gulp.watch('sass/*.scss',['css']);
+  gulp.watch('sass/*.scss',['styles']);
 });
 
 // Default Task
-gulp.task('default', ['css', 'watch']);
+gulp.task('default', ['styles', 'templates', 'watch']);

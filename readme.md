@@ -1,4 +1,4 @@
-# [Reflex](http://reflex.doublethink.is)
+# [Reflex](https://github.com/craigmorrison/reflex)
 
 Reflex is a front-end web development framework for generating HTML5 web projects. It utilises Node.js, Jade templating and Sass preprocessing.
 
