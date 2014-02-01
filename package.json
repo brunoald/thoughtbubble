@@ -14,5 +14,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/craigmorrison/reflex/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.0",
+    "gulp-util": "~2.2.13"
   }
 }
