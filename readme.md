@@ -1,12 +1,12 @@
 # [Reflex](http://reflex.doublethink.is)
 
-Reflex is a front-end web development framework written in HTML5, JavaScript and Sass. It is designed to serve as a starting point for modern web projects. Reflex does not attempt to dictate the style of the site with presets, only to combine sensible defaults with robust grid building tools.
+Reflex is a front-end web development framework for generating HTML5 web projects. It utilises Node.js, Jade templating and Sass preprocessing.
 
 ## Documentation
 Please view the project's GitHub Wiki for documentation.
 
 ## Browser Support
-Reflex is designed to work fully with all modern browser with fall-backs for Internet Explorer 8+ and the basic (non-media query) styles serving as a base for supporting older browsers.
+Reflex is designed for creating web projects aimed at modern browsers with strong HTML5 support (e.g. Internet Explorer 9+ and the latest versions of Chrome, Firefox, Safari and Opera).
 
 ## License
 Reflex is released under the MIT license.
