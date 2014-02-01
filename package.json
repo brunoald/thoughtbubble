@@ -20,6 +20,8 @@
     "gulp-sass": "~0.6.0",
     "node-bourbon": "~1.0.0",
     "gulp-csso": "~0.2.3",
-    "gulp-jade": "~0.4.0"
+    "gulp-jade": "~0.4.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-concat": "~2.1.7"
   }
 }

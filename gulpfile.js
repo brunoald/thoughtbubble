@@ -1,12 +1,27 @@
 // Define Variables for Dependencies
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var bourbon = require('node-bourbon').includePaths;
 var sass = require('gulp-sass');
 var csso = require('gulp-csso');
 var jade = require('gulp-jade');
 
-// Basic Tasks
+// JavaScript
+gulp.task('js', function() {
+  return gulp.src('scripts/*.js')
+    .pipe( uglify() )
+    .pipe( gulp.dest('www/js'))
+});
+
+gulp.task('js-concat', function() {
+  return gulp.src('scripts/all/*.js')
+    .pipe( uglify() )
+    .pipe( concat('all.min.js'))
+    .pipe( gulp.dest('www/js'))
+});
+// Styles
 gulp.task('styles', function() {
   return gulp.src('sass/*.scss')
     .pipe( 
@@ -37,4 +52,4 @@ gulp.task('watch', function () {
 });
 
 // Default Task
-gulp.task('default', ['styles', 'templates', 'watch']);
+gulp.task('default', ['js', 'js-concat', 'styles', 'templates', 'watch']);
