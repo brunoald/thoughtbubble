@@ -1,0 +1,20 @@
+// Typefaces
+$base-typeface: "Helvetica Neue", "Helvetica", sans-serif !default;
+$mono-typeface: "Consolas", "Andale Mono", monospace !default;
+
+// Type Weights
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+// Modular Scale
+$body-size: 16;
+$small-size: 13;
+$scale-ratio: 1.618;
+
+$h6-size: modular-scale($body-size, 0, $scale-ratio);
+$h5-size: modular-scale($small-size, 1, $scale-ratio);
+$h4-size: modular-scale($body-size, 1, $scale-ratio);
+$h3-size: modular-scale($small-size, 2, $scale-ratio);
+$h2-size: modular-scale($body-size, 2, $scale-ratio);
+$h1-size: modular-scale($small-size, 3, $scale-ratio);

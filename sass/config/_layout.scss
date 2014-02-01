@@ -1,0 +1,9 @@
+// Sets the reading direction and it's opposite (LTR or RTL)
+$text-direction: left;
+$reverse-direction: right;
+
+// Sets a baseline size (default is based on the body text)
+$baseline: $body-size * $scale-ratio;
+
+// Set a grid gutter based on the text baseline
+$gutter: $baseline;

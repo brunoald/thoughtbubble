@@ -2,7 +2,6 @@
   "name": "reflex",
   "version": "3.0.0",
   "description": "Reflex is a front-end web development framework for generating HTML5 web projects.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +16,9 @@
   },
   "devDependencies": {
     "gulp": "~3.5.0",
-    "gulp-util": "~2.2.13"
+    "gulp-util": "~2.2.13",
+    "gulp-sass": "~0.6.0",
+    "node-bourbon": "~1.0.0",
+    "gulp-csso": "~0.2.3"
   }
 }

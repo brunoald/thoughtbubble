@@ -1,0 +1,26 @@
+// Set Border Box as default
+* {
+  @include box-sizing(border-box);
+}
+
+// Grid Container
+.container {
+  @include container;
+  @include grid-padding;
+  min-width: 10em;
+  max-width: 40em;
+}
+
+// Grids
+.grid {
+  @include grid;
+}
+
+// Grid Units
+.unit {
+  @include unit;
+}
+
+.unit-right {
+  @include unit(right);
+}

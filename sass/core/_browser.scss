@@ -1,0 +1,12 @@
+// Set browser highlight colours
+::-moz-selection {
+  background: $selection-background-color;
+  color: $selection-text-color;
+  text-shadow: $selection-text-shadow;
+}
+
+::selection {
+  background: $selection-background-color;
+  color: $selection-text-color;
+  text-shadow: $selection-text-shadow;
+}
