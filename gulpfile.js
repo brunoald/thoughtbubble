@@ -26,7 +26,7 @@ gulp.task('js', function() {
 gulp.task('js-concat', function() {
   return gulp.src('scripts/components/*.js')
     .pipe( uglify() )
-    .pipe( concat('scripts.js'))
+    .pipe( concat('main.js'))
     .pipe( gulp.dest('www/js'))
 });
 // Styles
@@ -66,6 +66,7 @@ gulp.task('watch', function () {
   gulp.watch(['sass/*.scss', 'sass/*.sass'],['styles']);
   gulp.watch('jade/*.jade',['templates']);
   gulp.watch('scripts/*.js',['scripts']);
+  gulp.watch(['images/**/*.svg', 'images/**/*.png', 'images/**/*.jpg', 'images/**/*.gif'],['imagemin']);
 });
 
 // Default Task
