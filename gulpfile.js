@@ -24,9 +24,9 @@ gulp.task('js', function() {
 });
 
 gulp.task('js-concat', function() {
-  return gulp.src('scripts/all/*.js')
+  return gulp.src('scripts/components/*.js')
     .pipe( uglify() )
-    .pipe( concat('all.min.js'))
+    .pipe( concat('scripts.js'))
     .pipe( gulp.dest('www/js'))
 });
 // Styles
