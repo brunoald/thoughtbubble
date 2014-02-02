@@ -1,0 +1,88 @@
+// Basic
+html {
+  font: $normal 100% $base-typeface;
+}
+
+body {
+  background: $white;
+  font-size: em($body-size);
+  line-height: em($baseline);
+  color: $grey-4;
+}
+
+// Typography
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  line-height: 1em;
+  color: $grey-2;
+}
+
+h1 {
+  font-size: em($h1-size);
+  margin-bottom: em($baseline / 2, $h1-size);
+}
+
+h2 {
+  font-size: em($h2-size);
+  margin-bottom: em($baseline / 2, $h2-size);
+}
+
+h3 {
+  font-size: em($h3-size);
+  margin-bottom: em($baseline / 2, $h3-size);
+}
+
+h4 {
+  font-size: em($h4-size);
+  margin-bottom: em($baseline / 2, $h4-size);
+}
+
+h5 {
+  font-size: em($h5-size);
+  margin-bottom: em($baseline / 2, $h5-size);
+}
+
+h6 {
+  font-size: em($h6-size);
+  margin-bottom: em($baseline / 2, $h6-size);
+}
+
+small {
+  font-size: em($small-size);
+}
+
+p, ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: em($baseline);
+}
+
+// Links
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+  &:active {
+    color: lighten($blue, 20%);
+  }
+}
+
+// Navigation
+#menu {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  a {
+    background: $grey-2;
+    border-bottom: 1px solid $white;
+    color: white;
+    display: block;
+    padding: em($baseline / 2);
+    text-decoration: none;
+    &:hover {
+      background: $blue;
+    }
+  }
+}

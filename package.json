@@ -1,0 +1,31 @@
+{
+  "name": "reflex",
+  "version": "3.0.0",
+  "description": "Reflex is a front-end web development framework for generating HTML5 web projects.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigmorrison/reflex.git"
+  },
+  "author": "Craig Morrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigmorrison/reflex/issues"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "gulp": "~3.5.0",
+    "gulp-util": "~2.2.13",
+    "gulp-sass": "~0.6.0",
+    "node-bourbon": "~1.0.0",
+    "gulp-csso": "~0.2.3",
+    "gulp-jade": "~0.4.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-clean": "~0.2.4"
+  }
+}

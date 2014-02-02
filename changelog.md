@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0
++ Complete rewrite, now uses Gulp.js – a node.js build tool.
++ Added Jade templating for HTML preprocessing
++ Added Javascript minification
++ Added Image optimisation
+
 ## 2.2
 + Remove `maximum-scale=1` now that the iOS bug has been fixed.
 + Update normalize.sass to 2.1.3

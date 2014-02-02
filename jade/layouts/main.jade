@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    //- Metadata
+    meta(charset="utf-8")
+    title='Reflex'
+    meta(name="description", content="Reflex is a development framework for HTML5 interfaces.")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    //- OpenGraph
+    meta(property="og:title", content="Reflex Framework")
+    meta(property="og:description", content="Reflex is a development framework for HTML5 interfaces.")
+    meta(property="og:url", content="https://github.com/craigmorrison/reflex")
+    meta(property="og:image", content="img/system/opengraph.png")
+    meta(property="og:image:width", content="500")
+    meta(property="og:image:height", content="500")
+
+    //- Icons
+    link(href="img/system/favicon.ico", rel="shortcut icon")
+    link(rel="img/system/apple-touch-icon-precomposed", href="apple-touch-icon-precomposed.png")
+    meta(content="/img/system/windows-icon.png", name="msapplication-TileImage")
+    meta(content="#1ea8ab", name="msapplication-TileColor")
+
+    //- JavaScript
+    script(src="js/libs/modernizr.min.js")
+
+    //- Stylesheets
+    link(href="css/main.css", rel="stylesheet")
+
+  body(class="container")
+    header(role="banner").container
+      h1 Reflex
+      nav#menu
+        ul
+          li: a(href="#") Home
+          li: a(href="#") About
+          li: a(href="#") Download
+
+    main
+      block content
+
+    footer(role="contentinfo").container
+      p.copyright &copy; 2014 Reflex Framework
+
+      script(src='js/libs/jquery.js')
+
+      //- Google Analytics: change UA-XXXXX-X to be your site's ID.
+        script.
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');

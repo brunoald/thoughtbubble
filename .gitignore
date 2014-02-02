@@ -1,4 +1,12 @@
+# Sass
 .sass-cache
+
+# Node
+npm-debug.log
+node_modules
+
+# Compiled Files
+www
 
 # OS Generated Files
 .DS_Store
