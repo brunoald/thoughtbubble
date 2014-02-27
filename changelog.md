@@ -1,5 +1,8 @@
 # Changelog
 
+## Head
++ Improved grid consistancy across media queries.
+
 ## 3.0.0
 + Complete rewrite, now uses Gulp.js – a node.js build tool.
 + Added Jade templating for HTML preprocessing
