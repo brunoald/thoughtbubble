@@ -23,11 +23,15 @@
 
 // Container for float modules with padding
 @mixin grid($gutter-modifier: 0.5) {
-  @include rem(-left, $gutter * $gutter-modifier * -1);
+  @include rem(margin-left, $gutter * $gutter-modifier * -1);
   @include rem(margin-right, $gutter * $gutter-modifier * -1);
 }
 
 // Grid Sizes
+@mixin width-full {
+  width: 100%;
+}
+
 @mixin width-golden-large {
   width: golden-ratio(100%, -1);
 }

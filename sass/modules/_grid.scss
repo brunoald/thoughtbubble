@@ -19,6 +19,7 @@
 // Grid Units
 .unit {
   @include unit;
+  @include width-full;
 }
 
 .unit-right {
