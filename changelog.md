@@ -1,6 +1,7 @@
 # Changelog
 
 ## Head
++ Improved Layout core framework.
 + Improved grid consistancy across media queries.
 
 ## 3.0.0

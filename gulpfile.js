@@ -64,7 +64,7 @@ gulp.task('imagemin', function () {
 // Watch
 gulp.task('watch', function () {
   gulp.watch(['sass/**/*.scss', 'sass/**/*.sass'],['styles']);
-  gulp.watch('jade/**/.*.jade',['templates']);
+  gulp.watch('jade/**/*.jade',['templates']);
   gulp.watch('scripts/**/*.js',['scripts']);
   gulp.watch(['images/**/*.svg', 'images/**/*.png', 'images/**/*.jpg', 'images/**/*.gif'],['imagemin']);
 });
