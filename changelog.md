@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 3.0.1
 + Fix issue where templates do not update.
 + Improved Layout core framework.
 + Improved grid consistancy across media queries.
