@@ -42,10 +42,6 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('www/css'));
 });
 
-gulp.task('templates', function() {
-
-});
-
 // Jade
 gulp.task('templates', function() {
   return gulp.src('jade/*.jade')
