@@ -14,18 +14,17 @@
   "bugs": {
     "url": "https://github.com/craigmorrison/reflex/issues"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "gulp": "~3.5.0",
     "gulp-util": "~2.2.13",
-    "gulp-sass": "~0.6.0",
     "node-bourbon": "~1.0.0",
     "gulp-csso": "~0.2.3",
     "gulp-jade": "~0.4.0",
     "gulp-uglify": "~0.2.0",
     "gulp-concat": "~2.1.7",
     "gulp-imagemin": "~0.1.4",
-    "gulp-clean": "~0.2.4"
+    "gulp-clean": "~0.2.4",
+    "gulp-ruby-sass": "^0.4.3"
   }
 }
