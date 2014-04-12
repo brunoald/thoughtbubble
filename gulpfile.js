@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 var bourbon = require('node-bourbon').includePaths;
-var sass = require('gulp-sass');
+var sass = require('gulp-ruby-sass');
 var csso = require('gulp-csso');
 var jade = require('gulp-jade');
 var imagemin = require('gulp-imagemin');
@@ -30,15 +30,16 @@ gulp.task('js-concat', function() {
     .pipe( gulp.dest('www/js'))
 });
 // Styles
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   return gulp.src(['sass/*.scss', 'sass/*.sass'])
-    .pipe( 
-      sass( {
-        includePaths: ['sass'].concat(bourbon),
-        errLogToConsole: true
-      } ) )
-    .pipe( csso() )
-    .pipe( gulp.dest('www/css/') )
+        .pipe(
+          sass({
+            sourcemap: true,
+            loadPath: ['sass'].concat(bourbon),
+            style: 'compressed'
+          })
+        )
+        .pipe(gulp.dest('www/css'));
 });
 
 gulp.task('templates', function() {
