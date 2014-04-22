@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0
++ Update to Sass 3.3 (gulp-ruby-sass)
++ Update to Bourbon 4
+
 ## 3.0.1
 + Fix issue where templates do not update.
 + Improved Layout core framework.
