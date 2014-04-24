@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.1.1
++ Update to Bourbon 4.0.1
+
 ## 3.1.0
 + Update to Sass 3.3 (gulp-ruby-sass)
 + Update to Bourbon 4
