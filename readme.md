@@ -4,6 +4,7 @@ Reflex is a front-end web development framework for generating HTML5 web project
 
 ## Installation
 Clone the git repository with the following command:
+
 `git clone --recursive https://github.com/doublethinkllp/reflex.git`
 
 ## Documentation
