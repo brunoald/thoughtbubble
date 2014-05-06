@@ -7,6 +7,9 @@ Clone the git repository with the following command:
 
 `git clone --recursive https://github.com/doublethinkllp/reflex.git`
 
+Then install the node modules with the following command:
+`npm install`
+
 ## Documentation
 Please view the project's GitHub Wiki for documentation.
 
