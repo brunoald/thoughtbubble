@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.0
++ Remove extra csso package
++ Update packages
+
 ## 3.1.1
 + Update to Bourbon 4.0.1
 

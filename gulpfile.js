@@ -6,7 +6,6 @@ var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 var bourbon = require('node-bourbon').includePaths;
 var sass = require('gulp-ruby-sass');
-var csso = require('gulp-csso');
 var jade = require('gulp-jade');
 var imagemin = require('gulp-imagemin');
 
