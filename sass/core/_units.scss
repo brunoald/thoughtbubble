@@ -43,7 +43,7 @@
 }
 
 // em value generator
-@function em($target, $context: $body-size) {
+@function em($target, $context: $base-size) {
   @return $target / $context * 1em;
 }
 

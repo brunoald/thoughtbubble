@@ -1,18 +1,18 @@
 {
-  "name": "reflex",
-  "version": "3.2.1",
-  "description": "Reflex is a front-end web development framework for generating HTML5 web projects.",
+  "name": "thoughtbubble",
+  "version": "3.3.0",
+  "description": "ThoughtBubble is a front-end web development framework for generating HTML5 web projects.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/doublethinkllp/reflex.git"
+    "url": "https://github.com/doublethinkllp/thoughtbubble.git"
   },
   "author": "Craig Morrison",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doubelethinkllp/reflex/issues"
+    "url": "https://github.com/doubelethinkllp/thoughtbubble/issues"
   },
   "dependencies": {
     "del": "^0.1.2",
