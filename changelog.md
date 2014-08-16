@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.0
++ Renamed to ThoughtBubble
++ Seperated body-size and base-size for 
+
 ## 3.2.1
 + Updated Packages
 + Replace gulp-clean with del
