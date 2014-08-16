@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.1
++ Updated Packages
++ Replace gulp-clean with del
+
 ## 3.2.0
 + Remove extra csso package
 + Update packages

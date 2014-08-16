@@ -1,19 +1,16 @@
 // Define Variables for Dependencies
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var del = require('del');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var clean = require('gulp-clean');
-var bourbon = require('node-bourbon').includePaths;
 var sass = require('gulp-ruby-sass');
 var jade = require('gulp-jade');
 var imagemin = require('gulp-imagemin');
 
-// Clean
-gulp.task('clean', function () {
-    gulp.src(['www'])
-        .pipe(clean())
-});
+
+// Clean out www folder
+gulp.task('clean', del.bind(null, ['www']));
 
 // JavaScript
 gulp.task('js', function() {
@@ -34,7 +31,7 @@ gulp.task('styles', function () {
         .pipe(
           sass({
             sourcemap: true,
-            loadPath: ['sass'].concat(bourbon),
+            loadPath: ['sass'],
             style: 'compressed'
           })
         )
