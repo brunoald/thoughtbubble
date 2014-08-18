@@ -15,14 +15,14 @@ gulp.task('clean', del.bind(null, ['www']));
 // JavaScript
 gulp.task('js', function() {
   return gulp.src('scripts/*.js')
-    .pipe( uglify() )
+    .pipe( uglify().on('error', gutil.log) )
     .pipe( gulp.dest('www/js'))
 });
 
 gulp.task('js-concat', function() {
   return gulp.src('scripts/components/*.js')
-    .pipe( uglify() )
-    .pipe( concat('main.js'))
+    .pipe( uglify().on('error', gutil.log) )
+    .pipe( concat('main.js').on('error', gutil.log) )
     .pipe( gulp.dest('www/js'))
 });
 // Styles
@@ -33,7 +33,7 @@ gulp.task('styles', function () {
             sourcemap: true,
             loadPath: ['sass'],
             style: 'compressed'
-          })
+          }).on('error', gutil.log)
         )
         .pipe(gulp.dest('www/css'));
 });
